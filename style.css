@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html , body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(218, 238, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameboard{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+   
+}
+
+#main{
+    height: 50vh;
+    /* background-color: aqua; */
+display: flex; 
+flex-direction: column;
+align-items: center;
+}
+
+
+.btn{
+    width: 100px;
+    height: 100px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 35px;
+    color: black;
+}
+
+.btn:hover{
+    background-color: rgb(216, 255, 216);
+    cursor: pointer;
+}
+
+
+#reset{
+    background-color: black;
+    color: white;
+    padding: 6px 14px ;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+#reset:hover{
+    background-color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:10px) and (max-width : 400px) {
+    #gameboard{
+        scale: .7;
+    }
+}
