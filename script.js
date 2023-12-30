@@ -72,6 +72,10 @@ function checkWinner() {
         let pos2Val = btns[pattern[1]].innerText;
         let pos3Val = btns[pattern[2]].innerText;
 
+        let pos11Val = btns[pattern[0]];
+        let pos22Val = btns[pattern[1]];
+        let pos33Val = btns[pattern[2]];
+        
 
         // console.log(pos1Val, pos2Val, pos3Val)
 
@@ -81,6 +85,9 @@ function checkWinner() {
                 btns.forEach(btn => {
                     btn.disabled = true;
                 });
+                pos11Val.style.backgroundColor="rgb(200, 255, 216)";
+                pos22Val.style.backgroundColor="rgb(200, 255, 216)";
+                pos33Val.style.backgroundColor="rgb(200, 255, 216)";
             }
             // else{
             //     winner.innerText="Game is Draw!!"
